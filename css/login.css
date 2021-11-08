@@ -1,0 +1,137 @@
+.modal a.close-modal {
+	background-image: url('../img/btn/close_60x60.png');
+}
+#login {
+}
+#login .logo_britana {
+	height: 80px;
+	display: inline-flex;
+	align-items: center;
+}
+#login .login-content,
+#login .logo_britana {
+	padding: 10px 30px;
+}
+#login .wabe-login {
+	height: 20px;
+}
+#login .login-content {
+	background-color: #e3f2fd;
+}
+.logo_britana .logo_img {
+	width: 70px;
+	height: 70px;
+	background-image: url('../img/logo/Original_logo_340x340.jpg');
+	background-size: cover;
+	margin-right: 30px;
+}
+.logo_britana .tittle-login {
+	font-size: 2em;
+	font-family: 'Meera Inimai';
+	font-weight: bold;
+	color: #ce002d;
+}
+/* BOTÓN MOSTRAR */
+.input-mostrar {
+	display: inline-flex;
+	align-items: center;
+	font-size: 1.3em;
+	color: rgb(122, 122, 122);
+}
+.input-mostrar #mostrar_password {
+	cursor: pointer;
+}
+.btn-mostrar {
+	height: 30px;
+	background: rgb(206, 0, 45);
+	color: white;
+	font-size: 1em;
+	font-family: 'Source Sans Pro';
+	border: none;
+	border-radius: 5px;
+	padding: 0 5px;
+}
+.buttons-login {
+	margin-top: 20px;
+	width: 100%;
+	display: inline-flex;
+}
+.button_enviar,
+.button-cancelar {
+	border: none;
+	font-family: 'Source Sans Pro';
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 1em;
+	color: white;
+	transition: all 0.3s;
+}
+.button_enviar:hover,
+.button-cancelar:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+.buttons-login .button_enviar {
+	height: 40px;
+	background: rgb(206, 0, 45);
+	margin-left: auto;
+}
+.buttons-login .button-cancelar {
+	height: 30px;
+	background: rgb(0, 29, 95);
+	text-decoration: none;
+	align-items: center;
+	display: inline-flex;
+}
+/* LABEL ANIM*/
+.wrapper-form-data {
+	background: #fff;
+	padding: 20px 15px;
+	display: inline-flex;
+	width: calc(100% - 30px);
+}
+.wrapper-form-data .input-data {
+	height: 40px;
+	width: 100%;
+	position: relative;
+}
+.wrapper-form-data .input-data input {
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 17px;
+	border-bottom: 2px solid silver;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+	transform: translateY(-20px);
+	font-size: 15px;
+}
+
+.wrapper-form-data .input-data label {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	color: grey;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.input-data .underline {
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	bottom: 0;
+}
+.input-data .underline:before {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before {
+	transform: scaleX(1);
+}
